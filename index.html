@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head>
+        <title>Random app</title>
+        <meta charset="UTF-8">
+        <link rel = "icon" href =
+"https://img.icons8.com/office/344/spa-flower.png"
+        type = "image/x-icon">
+        <style>
+            h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+</head>
+ 
+<body style = "text-align:center;">
+     
+    <h1 style = "color:rgba(223, 102, 3, 0.87);">Bạn nào may mắn đây?</h1>
+     
+    <p id = "GFG_UP" style =
+        "font-size: 25px; font-weight: bold;">
+    </p>
+     
+    <button id = "button" onclick = "GFG_Fun()">
+        random
+    </button>
+     
+    <p id = "GFG_DOWN" style =
+        "font-size: 24px; font-weight:500; color: rgb(17, 55, 180);">
+    </p>
+     <script>
+ 
+        var down = document.getElementById('GFG_DOWN');
+         
+        var arr = [' Anh Thư', 'Huyền Trang', ' Hồng Nhung','Đan Trinh'];
+         
+        up.innerHTML = "Click on the button to select"
+                        + " random element from the"
+                        + " array.<br><br>" + arr;
+         
+        function random(mn, mx) {
+            return Math.random() * (mx - mn) + mn;
+        }
+         
+        function GFG_Fun() {
+            down.innerHTML = arr[Math.floor(random(1, 5))-1];
+        }
+    </script>
+</body>
+</html>
